@@ -1,10 +1,10 @@
 /*
- * @Description: 
+ * @Description: axios封装
  * @Version: 2.0
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:56:46
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 16:22:14
+ * @LastEditTime: 2020-11-04 16:57:16
  */
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 import { Message } from "element-ui";

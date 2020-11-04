@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:49:52
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 16:23:07
+ * @LastEditTime: 2020-11-04 16:44:44
  */
 import Vue from 'vue'
 import App from './App.vue'
@@ -62,3 +62,5 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+
