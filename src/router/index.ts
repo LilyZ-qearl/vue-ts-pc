@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:49:52
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 15:12:45
+ * @LastEditTime: 2020-11-04 15:50:35
  */
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
@@ -25,7 +25,8 @@ const routes: RouteConfig[] = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  
 ]
 
 const router = new VueRouter({

@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:57:42
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 15:10:21
+ * @LastEditTime: 2020-11-04 16:27:34
  */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
@@ -15,7 +15,6 @@ const resolve = dir => {
 
 // 线上打包路径，请根据项目实际线上情况
 const PUBLIC_URL = process.env.NODE_ENV === 'production' ? './' : '/'
-
 
 
 module.exports = {
@@ -29,6 +28,22 @@ module.exports = {
 	config.resolve.alias
 		.set('@', resolve('src'))
 		.set('_c', resolve('src/components'))
+	},
+	configureWebpack: config => {
+		if (process.env.NODE_ENV === "production") {
+			// 为生产环境修改配置...
+			config.mode = "production";
+		} else {
+			// 为开发环境修改配置...
+			config.mode = "development";
+		}
+	
+		Object.assign(config, {
+			// 开发生产共同配置
+			resolve: {
+				extensions: [".js", ".vue", ".json", ".ts", ".tsx"],
+			}
+		});
 	},
 	css : {
 	modules: false,
