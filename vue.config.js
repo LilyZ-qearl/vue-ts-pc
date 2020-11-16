@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:57:42
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 16:27:34
+ * @LastEditTime: 2020-11-04 18:00:23
  */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
@@ -24,11 +24,6 @@ module.exports = {
 	indexPath : 'index.html',
 	pages : undefined,
 	productionSourceMap : false,
-	chainWebpack:config => {
-	config.resolve.alias
-		.set('@', resolve('src'))
-		.set('_c', resolve('src/components'))
-	},
 	configureWebpack: config => {
 		if (process.env.NODE_ENV === "production") {
 			// 为生产环境修改配置...
@@ -42,14 +37,17 @@ module.exports = {
 			// 开发生产共同配置
 			resolve: {
 				extensions: [".js", ".vue", ".json", ".ts", ".tsx"],
+			},
+			alias: {
+				"@": path.resolve(__dirname, "./src"),
 			}
 		});
 	},
 	css : {
-	modules: false,
-	extract: true,
-	sourceMap: false,
-	loaderOptions: {} // css预设器配置项
+		requireModuleExtension: false,
+		extract: true,
+		sourceMap: false,
+		loaderOptions: {} // css预设器配置项
 	},
 	devServer : {
 		port: 3000,

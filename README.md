@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:50:21
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 15:32:43
+ * @LastEditTime: 2020-11-16 10:33:36
 -->
 # eslink-stock-pc
 
@@ -38,8 +38,7 @@ npm run test:e2e
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-技术：Vue+ ts
+### 技术
+```
+Vue+ TS (全家桶)
+```

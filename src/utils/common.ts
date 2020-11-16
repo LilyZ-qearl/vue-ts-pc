@@ -4,6 +4,6 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:56:26
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 16:56:54
+ * @LastEditTime: 2020-11-04 17:39:48
  */
-const userName: String = '哈哈'; 
+const userName: string = '哈哈'; 

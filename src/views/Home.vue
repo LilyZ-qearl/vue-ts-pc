@@ -4,22 +4,24 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:49:51
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 15:11:15
+ * @LastEditTime: 2020-11-04 18:10:25
 -->
 <template>
-  <div class="home">
-   我是首页
-   <button @click="addAge">点击</button>
-  </div>
+  <BaseContainer title="首页">
+    <div class="home">
+		我是首页
+		<button @click="addAge">点击</button>
+    </div>
+  </BaseContainer>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import {User} from '@/interface/user';
-
+import { User } from '@/interface/user';
+import BaseContainer from './../components/BaseContainer.vue';
 @Component({
   components: {
-    
+    BaseContainer
   },
 })
 export default class Home extends Vue {
