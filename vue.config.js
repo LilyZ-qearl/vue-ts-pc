@@ -4,7 +4,7 @@
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:57:42
  * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 18:00:23
+ * @LastEditTime: 2020-11-26 09:58:16
  */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
@@ -37,9 +37,6 @@ module.exports = {
 			// 开发生产共同配置
 			resolve: {
 				extensions: [".js", ".vue", ".json", ".ts", ".tsx"],
-			},
-			alias: {
-				"@": path.resolve(__dirname, "./src"),
 			}
 		});
 	},
@@ -47,7 +44,8 @@ module.exports = {
 		requireModuleExtension: false,
 		extract: true,
 		sourceMap: false,
-		loaderOptions: {} // css预设器配置项
+		loaderOptions: {} ,// css预设器配置项
+		modules: false
 	},
 	devServer : {
 		port: 3000,
@@ -69,4 +67,8 @@ module.exports = {
 		// 	}
 		// }
 	},
+	// 第三方插件配置
+	pluginOptions: {
+		// ...
+	}
 };
