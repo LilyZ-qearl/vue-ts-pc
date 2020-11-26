@@ -3,14 +3,16 @@
  * @Version: 2.0
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:49:51
- * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 18:10:25
+ * @LastEditors: daikeyi
+ * @LastEditTime: 2020-11-26 16:45:10
 -->
 <template>
   <BaseContainer title="首页">
     <div class="home">
-		我是首页
-		<button @click="addAge">点击</button>
+       我是首页
+        <button @click="addAge">点击</button>
+      <div>{{user.age}}</div>
+      <BaseIcon type="esicon-eye-fill" :style="{fontSize: '50px'}" rotate="90" :size="20" color="red" spin></BaseIcon>
     </div>
   </BaseContainer>
 </template>
@@ -19,9 +21,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { User } from '@/interface/user';
 import BaseContainer from './../components/BaseContainer.vue';
+import BaseIcon from './../components/BaseIcon/BaseIcon.vue';
 @Component({
   components: {
-    BaseContainer
+    BaseContainer,
+    BaseIcon
   },
 })
 export default class Home extends Vue {

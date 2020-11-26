@@ -1,0 +1,9 @@
+.anticon-spin {
+  animation: loadingCircle 1s linear infinite;
+}
+
+@keyframes loadingCircle
+{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}

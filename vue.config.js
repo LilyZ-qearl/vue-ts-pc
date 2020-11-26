@@ -3,8 +3,8 @@
  * @Version: 2.0
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:57:42
- * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-26 09:58:16
+ * @LastEditors: daikeyi
+ * @LastEditTime: 2020-11-26 13:33:42
  */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
@@ -45,7 +45,7 @@ module.exports = {
 		extract: true,
 		sourceMap: false,
 		loaderOptions: {} ,// css预设器配置项
-		modules: false
+		// modules: false
 	},
 	devServer : {
 		port: 3000,

@@ -3,8 +3,8 @@
  * @Version: 2.0
  * @Autor: zhangyi
  * @Date: 2020-11-04 13:49:51
- * @LastEditors: zhangyi
- * @LastEditTime: 2020-11-04 16:47:20
+ * @LastEditors: daikeyi
+ * @LastEditTime: 2020-11-26 16:42:19
 -->
 <template>
   <div id="app">
@@ -18,4 +18,5 @@
 
 <style lang="scss">
 @import url("./assets/style/variables.scss");
+@import url("./assets/style/animate.scss");
 </style>
